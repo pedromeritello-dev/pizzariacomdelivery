@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Pizzaria</title>
+    <link rel="stylesheet" href="css/cardapio.css">
+</head>
+<body>
+
+    <!-- HEADER FIXO -->
+  <header class="site-header">
+    <div class="wrap">
+      <div class="logo-wrap">
+        <img src="assets/logo.png" alt="Logo Pizzaria" class="logo">
+      </div>
+
+      <nav class="main-nav" aria-label="menu principal">
+        <a class="nav-link active" href="#inicio">Início</a>
+        <a class="nav-link" href="#cardapio">Cardápio</a>
+        <a class="nav-link" href="#contato">Contato</a>
+        <a class="nav-link" href="#promocoes">Promoções</a>
+      </nav>
+
+      <div class="cta-wrap">
+        <button class="btn-cta">Fazer Pedido</button>
+      </div>
+    </div>
+  </header>
+
+
+
+    <main>
+
+        <!-- FILTROS -->
+        <div class="filtros">
+    <button class="filtro-btn ativo" data-categoria="todas">Todas</button>
+    <button class="filtro-btn" data-categoria="tradicional">Tradicionais</button>
+    <button class="filtro-btn" data-categoria="especial">Especiais</button>
+    <button class="filtro-btn" data-categoria="doce">Doces</button>
+</div>
+
+
+
+        <!-- GRID DE PIZZAS -->
+        <section class="grid-pizzas">
+
+            <!-- MARGUERITA -->
+<div class="card" data-tipo="tradicional">
+    <div class="img-container">
+        <img src="imgs/margerita.jpg" alt="Pizza de Marguerita">
+        <span class="preco">R$ 55,00</span>
+    </div>
+    <h3>Pizza de Marguerita</h3>
+    <p>Mussarela, tomate e manjericão.</p>
+    <button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+<!-- CALABRESA -->
+<div class="card" data-tipo="tradicional">
+    <div class="img-container">
+        <img src="imgs/calabresa.jpg" alt="Pizza de Calabresa">
+        <span class="preco">R$ 58,00</span>
+    </div>
+    <h3>Pizza de Calabresa</h3>
+    <p>Calabresa fatiada com cebola.</p>
+    <button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+<!-- PORTUGUESA -->
+<div class="card" data-tipo="tradicional">
+    <div class="img-container">
+        <img src="imgs/portuguesa.jpg" alt="Pizza Portuguesa">
+        <span class="preco">R$ 59,00</span>
+    </div>
+    <h3>Pizza Portuguesa</h3>
+    <p>Mussarela, presunto, ovos e vegetais.</p>
+    <button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+<!-- CHEESE FRANGO (FRANGO COM CHEDDAR) -->
+<div class="card" data-tipo="especial">
+    <div class="img-container">
+        <img src="imgs/frango-cheddar.jpg" alt="Pizza Frango com Cheddar">
+        <span class="preco">R$ 58,00</span>
+    </div>
+    <h3>Pizza de Frango com Cheddar</h3>
+    <p>Frango desfiado com cheddar cremoso.</p>
+    <button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+<!-- CALABRESA C/ CATUPIRY -->
+<div class="card" data-tipo="especial">
+    <div class="img-container">
+        <img src="imgs/calabresa-catupiry.jpg" alt="Pizza Calabresa com Catupiry">
+        <span class="preco">R$ 59,00</span>
+    </div>
+    <h3>Pizza de Calabresa com Catupiry</h3>
+    <p>Calabresa fatiada com catupiry.</p>
+    <button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+<!-- QUATRO QUEIJOS -->
+<div class="card" data-tipo="especial">
+    <div class="img-container">
+        <img src="imgs/4queijos.jpg" alt="Pizza Quatro Queijos">
+        <span class="preco">R$ 55,00</span>
+    </div>
+    <h3>Pizza de Quatro Queijos</h3>
+    <p>Mussarela, provolone, parmesão e gorgonzola.</p>
+    <button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+<!-- BANANA COM CANELA -->
+<div class="card" data-tipo="doce">
+    <div class="img-container">
+        <img src="imgs/banana.jpg" alt="Pizza de Banana com Canela">
+        <span class="preco">R$ 49,00</span>
+    </div>
+    <h3>Pizza de Banana com Canela</h3>
+    <p>Banana, açúcar e canela.</p>
+    <button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+<!-- MORANGO COM CHOCOLATE -->
+<div class="card" data-tipo="doce">
+    <div class="img-container">
+        <img src="imgs/morango-choc.jpg" alt="Pizza de Chocolate com Morango">
+        <span class="preco">R$ 62,00</span>
+    </div>
+    <h3>Pizza de Chocolate com Morango</h3>
+    <p>Chocolate ao leite e pedaços de morango.</p>
+    <button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+<!-- FRUTOS DO MAR -->
+<div class="card" data-tipo="especial">
+    <div class="img-container">
+        <img src="imgs/frutos-do-mar.jpg" alt="Pizza de Frutos do Mar">
+        <span class="preco">R$ 72,00</span>
+    </div>
+    <h3>Pizza de Frutos do Mar</h3>
+    <p>Mix de frutos do mar temperados.</p>
+    <button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+<!-- HOT DOG -->
+<div class="card" data-tipo="especial">
+    <div class="img-container">
+        <img src="imgs/hotdog.jpg" alt="Pizza de Cachorro Quente">
+        <span class="preco">R$ 62,00</span>
+    </div>
+    <h3>Pizza de Cachorro Quente</h3>
+    <p>Mussarela, salsicha e molho especial.</p>
+    <button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+
+        </section>
+
+        <!-- TAMANHOS DISPONÍVEIS -->
+        <section class="tamanhos">
+            <h2>Tamanhos Disponíveis</h2>
+
+            <div class="tamanhos-grid">
+                <div class="tamanho-card">
+                    <h3>Pequena</h3>
+                    <p>4 fatias</p>
+                    <p>25cm</p>
+                </div>
+
+                <div class="tamanho-card">
+                    <h3>Média</h3>
+                    <p>6 fatias</p>
+                    <p>30cm</p>
+                </div>
+
+                <div class="tamanho-card">
+                    <h3>Grande</h3>
+                    <p>8 fatias</p>
+                    <p>35cm</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-col footer-brand">
+        <img src="assets/logo.png" alt="logo" class="footer-logo">
+        <p class="footer-brief">Pizzaria com entrega rápida e os melhores sabores.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Início</h4>
+        <p>Faça seu pedido</p>
+        <p>Veja o Cardápio</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contatos</h4>
+        <p>11 95004-5711</p>
+        <p>@pizzaria.comoficial</p>
+        <p>pizzariapontocomdelivery</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Localização</h4>
+        <p>Av. Delfinópolis, 659</p>
+        <p>Cidade Seródio, Guarulhos</p>
+        <p>SP, 07150-010</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      
+    </div>
+  </footer>
+  <script src="js/filtro.js"></script>
+</body>
+</html>
