@@ -1,0 +1,211 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Georgia", serif;
+  background: #fff;
+  color: #222;
+}
+
+/* WRAP */
+.wrap {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ========== HEADER ========== */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 70px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  z-index: 80;
+}
+
+.site-header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { height: 54px; }
+
+/* menu */
+.main-nav { display: flex; gap: 40px; }
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #c91b20;
+}
+
+/* botão */
+.btn-cta {
+  background: #b70d17;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(183,13,23,0.25);
+}
+.btn-cta:hover { background: #9e0b14; }
+
+
+/* espaço por causa do header */
+.social-section,
+.map-section {
+  margin-top: 90px;
+}
+
+
+/* ========== SOCIAL SECTION ========== */
+.social-section {
+  background: linear-gradient(90deg, #7a0f14, #b21a20);
+  padding: 60px;
+}
+
+.social-wrap {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-card {
+  width: 180px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 26px 12px;
+  text-align: center;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.16);
+  transition: 0.25s ease;
+}
+
+.social-card img {
+  width: 54px;
+  margin-bottom: 12px;
+}
+
+.social-card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* ========== MAPA ========== */
+.map-section {
+  padding: 60px 0;
+  background: #f2f2f2;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 26px;
+  font-family: "Georgia";
+}
+
+.map-holder {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #eaf6ff;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.map-holder iframe {
+  width: 100%;
+  height: 320px;
+  border: none;
+  border-radius: 6px;
+}
+
+.endereco {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+}
+
+
+/* ========== FOOTER ========== */
+.site-footer {
+  margin-top: 40px;
+  background: linear-gradient(180deg,#7a0f14,#b21a20);
+  color: #fff;
+  padding: 40px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 28px;
+}
+
+.footer-logo { height: 62px; margin-bottom: 10px; }
+.footer-brief { font-size: 14px; opacity: 0.9; }
+
+.footer-col h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  margin-top: 22px;
+  padding-top: 14px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+
+/* ===================================
+   RESPONSIVIDADE
+=================================== */
+
+@media (max-width: 950px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .page-title {
+    font-size: 2.1rem;
+  }
+
+  .page-sub {
+    font-size: 1rem;
+  }
+
+  .form-contato {
+    padding: 18px;
+  }
+
+  .info-mapa iframe {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-contato {
+    padding-top: 120px;
+  }
+
+  .page-title {
+    font-size: 1.9rem;
+  }
+
+  .btn-enviar {
+    width: 100%;
+  }
+}

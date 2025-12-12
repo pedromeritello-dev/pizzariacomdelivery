@@ -1,0 +1,245 @@
+/* RESET BÁSICO */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  color: #222;
+}
+
+/* WRAP CENTRAL */
+.wrap {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* ========== HEADER ========== */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 70px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  z-index: 60;
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo tamanho parecido com print */
+.logo { height: 54px; display: block; }
+
+/* menu central com espaçamento grande */
+.main-nav { display: flex; gap: 40px; align-items: center; }
+.main-nav .nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  padding: 8px 0;
+}
+.main-nav .nav-link.active,
+.main-nav .nav-link:hover {
+  color: #c91b20; /* vermelho destaque */
+}
+
+/* botão direito */
+.btn-cta {
+  background: #b70d17;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(183,13,23,0.25);
+}
+.btn-cta:hover { background: #9e0b14; }
+
+/* espaçamento para conteúdo não ficar atrás do header */
+.hero { padding-top: 90px; }
+
+
+
+/* CONTAINER DOS FILTROS */
+
+main {
+    padding-top: 60px; /* empurra tudo para baixo */
+}
+.filtros {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    background: #e5e5e5;
+}
+
+.filtros button {
+    padding: 8px 25px;
+    border: 1px solid #a60000;
+    background: white;
+    color: #a60000;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filtros button.ativo,
+.filtros button:hover {
+    background: #a60000;
+    color: white;
+}
+
+
+
+/* GRID DAS PIZZAS */
+.grid-pizzas {
+    padding: 40px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+
+/* CARD */
+.card {
+    border: 1px solid #c60000;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 5px #0002;
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
+.img-container {
+    position: relative;
+}
+
+.preco {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ffcc66;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    padding: 0 10px;
+}
+
+.btn-add {
+    margin-top: 15px;
+    background: #a60000;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    width: 80%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-add:hover {
+    background: #8c0000;
+}
+
+
+
+/* TAMANHOS */
+.tamanhos {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.tamanhos h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.tamanhos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.tamanho-card {
+    background: #f5f5f5;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #0002;
+}
+
+.tamanho-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* ========== FOOTER ========== */
+.site-footer {
+  margin-top: 20px;
+  background: linear-gradient(180deg,#7a0f14,#b21a20);
+  color: #fff;
+  padding: 40px 0 18px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.footer-col h4 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.footer-logo { height: 62px; margin-bottom: 12px; }
+.footer-brief { color: rgba(255,255,255,0.9); font-size: 14px; }
+
+/* linha e texto final */
+.footer-bottom {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255,255,255,0.95);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    .btn-add {
+        width: 90%;
+    }
+
+    .tamanhos-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
