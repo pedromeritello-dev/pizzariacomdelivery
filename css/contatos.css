@@ -33,7 +33,6 @@ body {
 
 .logo { height: 54px; }
 
-/* menu */
 .main-nav { display: flex; gap: 40px; }
 .nav-link {
   text-decoration: none;
@@ -45,7 +44,6 @@ body {
   color: #c91b20;
 }
 
-/* botão */
 .btn-cta {
   background: #b70d17;
   padding: 10px 20px;
@@ -58,8 +56,6 @@ body {
 }
 .btn-cta:hover { background: #9e0b14; }
 
-
-/* espaço por causa do header */
 .social-section,
 .map-section {
   margin-top: 90px;
@@ -168,9 +164,7 @@ body {
 }
 
 
-/* ===================================
-   RESPONSIVIDADE
-=================================== */
+/* ============ RESPONSIVIDADE =============*/
 
 @media (max-width: 950px) {
   .info-grid {

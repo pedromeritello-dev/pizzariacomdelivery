@@ -35,10 +35,8 @@ body {
   justify-content: space-between;
 }
 
-/* logo tamanho parecido com print */
 .logo { height: 54px; display: block; }
 
-/* menu central com espaçamento grande */
 .main-nav { display: flex; gap: 40px; align-items: center; }
 .main-nav .nav-link {
   text-decoration: none;
@@ -48,10 +46,9 @@ body {
 }
 .main-nav .nav-link.active,
 .main-nav .nav-link:hover {
-  color: #c91b20; /* vermelho destaque */
+  color: #c91b20; 
 }
 
-/* botão direito */
 .btn-cta {
   background: #b70d17;
   color: #fff;
@@ -64,15 +61,12 @@ body {
 }
 .btn-cta:hover { background: #9e0b14; }
 
-/* espaçamento para conteúdo não ficar atrás do header */
 .hero { padding-top: 90px; }
 
-
-
-/* CONTAINER DOS FILTROS */
+/* ======== CONTAINER DOS FILTROS ======== */
 
 main {
-    padding-top: 60px; /* empurra tudo para baixo */
+    padding-top: 60px;  
 }
 .filtros {
 
@@ -102,7 +96,7 @@ main {
 
 
 
-/* GRID DAS PIZZAS */
+/* ========= GRID DAS PIZZAS =========== */
 .grid-pizzas {
     padding: 40px 40px;
     display: grid;
@@ -111,7 +105,7 @@ main {
 }
 
 
-/* CARD */
+/* ======== CARD ======== */
 .card {
     border: 1px solid #c60000;
     border-radius: 8px;
@@ -172,7 +166,7 @@ main {
 
 
 
-/* TAMANHOS */
+/* ========== TAMANHOS ========== */
 .tamanhos {
     text-align: center;
     padding: 50px 0;
@@ -222,7 +216,6 @@ main {
 .footer-logo { height: 62px; margin-bottom: 12px; }
 .footer-brief { color: rgba(255,255,255,0.9); font-size: 14px; }
 
-/* linha e texto final */
 .footer-bottom {
   margin-top: 20px;
   padding-top: 18px;
@@ -232,7 +225,7 @@ main {
   color: rgba(255,255,255,0.95);
 }
 
-/* RESPONSIVIDADE */
+/* ============== RESPONSIVIDADE ============== */
 @media (max-width: 600px) {
     .btn-add {
         width: 90%;

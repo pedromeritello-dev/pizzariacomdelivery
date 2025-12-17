@@ -1,5 +1,5 @@
 
-/* RESET BÁSICO */
+/* RESET */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html,body { height: 100%; }
 body {
@@ -10,7 +10,7 @@ body {
   color: #222;
 }
 
-/* WRAP CENTRAL */
+/* WRAP */
 .wrap {
   width: 90%;
   max-width: 1100px;
@@ -35,10 +35,8 @@ body {
   justify-content: space-between;
 }
 
-/* logo tamanho parecido com print */
 .logo { height: 54px; display: block; }
 
-/* menu central com espaçamento grande */
 .main-nav { display: flex; gap: 40px; align-items: center; }
 .main-nav .nav-link {
   text-decoration: none;
@@ -48,10 +46,9 @@ body {
 }
 .main-nav .nav-link.active,
 .main-nav .nav-link:hover {
-  color: #c91b20; /* vermelho destaque */
+  color: #c91b20; 
 }
 
-/* botão direito */
 .btn-cta {
   background: #b70d17;
   color: #fff;
@@ -64,7 +61,6 @@ body {
 }
 .btn-cta:hover { background: #9e0b14; }
 
-/* espaçamento para conteúdo não ficar atrás do header */
 .hero { padding-top: 90px; }
 
 /* ===== HERO ===== */
@@ -72,10 +68,9 @@ body {
   width: 100%;
   background: #a40011;
   padding: 160px 0 120px 0;
-  margin-top: 80px; /* compensar header fixo */
+  margin-top: 80px; 
 }
 
-/* container interno */
 .hero-content {
   max-width: 1200px;
   width: 90%;
@@ -87,7 +82,6 @@ body {
   color: white;
 }
 
-/* texto */
 .hero-text {
   max-width: 600px;
 }
@@ -104,7 +98,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* botões */
 .hero-btns {
   display: flex;
   gap: 20px;
@@ -139,7 +132,6 @@ body {
   color: #7a000c;
 }
 
-/* imagem */
 .hero-img img {
   width: 700px;
   max-width: 100%;
@@ -158,7 +150,6 @@ body {
   font-weight: 600;
 }
 
-/* grid 3 colunas como no print */
 .pratos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -166,7 +157,6 @@ body {
   align-items: start;
 }
 
-/* cada card */
 .prato {
   background: #fff;
   text-align: center;
@@ -211,7 +201,6 @@ body {
   border-radius: 6px;
 }
 
-/* endereço abaixo do mapa */
 .endereco {
   text-align: center;
   color: #333;
@@ -239,7 +228,6 @@ body {
 .footer-logo { height: 62px; margin-bottom: 12px; }
 .footer-brief { color: rgba(255,255,255,0.9); font-size: 14px; }
 
-/* linha e texto final */
 .footer-bottom {
   margin-top: 20px;
   padding-top: 18px;
@@ -249,7 +237,7 @@ body {
   color: rgba(255,255,255,0.95);
 }
 
-/* ========== RESPONSIVO ========== */
+/* ========== RESPONSIVIDADE ========== */
 @media (max-width: 980px) {
   .pratos-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-right { display: none; } /* esconde imagem para dispositivos menores */
